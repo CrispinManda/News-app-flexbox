@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Stylesheets links -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="menu-active">
+    <div id="navbar">
+      <div class="navbar">
+        <img src="./assets/images/logo.svg" alt="Logo News" class="logo" />
+
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="Icon Menu"
+          class="navbar__icon-menu"
+          id="icon-menu"
+        />
+
+        <div class="menu d-none" id="menu">
+          <img
+            src="./assets/images/icon-menu-close.svg"
+            alt="Icon close"
+            class="menu__icon-close"
+            id="icon-menu-close"
+          />
+
+          <nav class="navigation">
+            <a href="#" class="navigation__item">Home</a>
+            <a href="#" class="navigation__item">New</a>
+            <a href="#" class="navigation__item">Popular</a>
+            <a href="#" class="navigation__item">Trending</a>
+            <a href="#" class="navigation__item">Categories</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay d-none" id="overlay"></div>
+
+    <main>
+      <header class="main-news">
+        <div class="main-news__container">
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="geometric pieces"
+          />
+
+          <div class="main-news__information">
+            <h1>The Bright Future of Web 3.0?</h1>
+
+            <div class="information__description">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Aside Bar -->
+        <aside class="newsbar">
+          <h2>New</h2>
+
+          <article class="newsbar__new">
+            <h3>Hydrogen VS Electric Cars</h3>
+
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+
+          <article class="newsbar__new">
+            <h3>The Downsides of AI Artistry</h3>
+
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+
+          <article class="newsbar__new">
+            <h3>Is VC Funding Drying Up?</h3>
+
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </aside>
+      </header>
+
+      <!-- Secondary News -->
+      <section class="secondary-news">
+        <article class="secondary-news__new">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="Retro PC illustration"
+          />
+
+          <div class="new__information">
+            <p class="new__id">01</p>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+
+        <article class="secondary-news__new">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="Retro PC illustration"
+          />
+
+          <div class="new__information">
+            <p class="new__id">02</p>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+
+        <article class="secondary-news__new">
+          <img
+            src="./assets/images//image-gaming-growth.jpg"
+            alt="Retro PC illustration"
+          />
+
+          <div class="new__information">
+            <p class="new__id">03</p>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="./js/behavior.js"></script>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/crispinmanda">Crispin Manda</a>.
+    </div>
+  </body>
+</html>
